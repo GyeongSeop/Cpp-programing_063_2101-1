@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Menu {
+private:
+    int s;
+
+public:
+    void China();
+    void Japan();
+    void SetMenu(int _s);
+
+};
+
+void Menu::China() {
+    cout << "중식" << endl;
+}
+
+void Menu::Japan() {
+    cout << "일식" << endl;
+}
+
+void Menu::SetMenu(int _s) {
+    s = _s;
+}
+
+int main() {
+    Menu m;
+
+    int u;
+
+    cout << "메뉴를 정하세요: ";
+    cin >> u;
+
+    m.SetMenu(u);
+
+    switch () {
+    case 1:
+        m.China();
+        break;
+
+    case 2:
+        m.Japan();
+        break;
+    }
+
+    return 0;
+}
